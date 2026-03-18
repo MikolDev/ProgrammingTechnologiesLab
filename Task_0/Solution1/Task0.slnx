@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Task0.Logic/Task0.Logic.csproj" />
+  <Project Path="Task0.Test/Task0.Test.csproj" />
+</Solution>
