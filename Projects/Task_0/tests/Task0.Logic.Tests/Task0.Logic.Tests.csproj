@@ -17,7 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Task0.Logic\Task0.Logic.csproj" />
+    <ProjectReference Include="..\..\src\Task0.Data\Task0.Data.csproj" />
+    <ProjectReference Include="..\..\src\Task0.Logic\Task0.Logic.csproj" />
   </ItemGroup>
 
   <ItemGroup>
