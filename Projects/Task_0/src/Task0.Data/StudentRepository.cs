@@ -2,7 +2,7 @@
 
 using System.Collections.Generic;
 
-public class StudentRepository
+public class StudentRepository : IStudentRepository
 {
     private List<Student> students = new List<Student>();
 

@@ -2,9 +2,23 @@
 
 using Task0.Data;
 using System;
-using System.Collections.Generic;
 
-public class StudentManagingSystem
+public class StudentManagingSystem(IStudentRepository repository)
 {
-   
+    private readonly IStudentRepository repository = repository;
+
+    public void AddStudent(Student student)
+    {
+        if (student.ID <= 0)
+        {
+            throw new ArgumentException("Student ID must greater than 0");
+        }
+
+        repository.Save(student);
+    }
+
+    public int GetStudenCount()
+    {
+        return repository.GetCount();
+    }
 }
