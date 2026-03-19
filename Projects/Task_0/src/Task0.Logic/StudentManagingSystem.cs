@@ -17,7 +17,7 @@ public class StudentManagingSystem(IStudentRepository repository)
         repository.Save(student);
     }
 
-    public int GetStudenCount()
+    public int GetStudentCount()
     {
         return repository.GetCount();
     }
